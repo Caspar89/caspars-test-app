@@ -1,3 +1,15 @@
 <h1>
-  {{title}}
+  I am component 1
 </h1>
+<div>
+  <div *ngIf= "!test_1">test_1 doesn't have a value yet</div>
+  {{test_1}}
+</div>
+<div>
+  <div *ngIf= "!test_2">test_2 doesn't have a value yet</div>
+  {{test_2}}
+</div>
+
+<div>{{test_web}}</div>
+
+<a routerLink="/second-component" routerLinkActive="active">to second component</a>
